@@ -9,9 +9,7 @@
     --yellow: #ffd24a;
 }
 
-* {
-    box-sizing: border-box;
-}
+* { box-sizing: border-box; }
 
 body {
     margin: 0;
@@ -21,9 +19,7 @@ body {
     line-height: 1.55;
 }
 
-a {
-    color: inherit;
-}
+a { color: inherit; }
 
 .hero,
 .policy-header {
@@ -48,9 +44,7 @@ nav div {
     font-size: 14px;
 }
 
-nav a {
-    text-decoration: none;
-}
+nav a { text-decoration: none; }
 
 .brand {
     font-size: 20px;
@@ -76,8 +70,7 @@ nav a {
     text-transform: uppercase;
 }
 
-h1,
-h2 {
+h1, h2 {
     margin: 0;
     line-height: 1.08;
 }
@@ -162,9 +155,7 @@ h1 {
     background: rgba(255, 255, 255, 0.07);
 }
 
-.stats div {
-    padding: 12px;
-}
+.stats div { padding: 12px; }
 
 .stats strong {
     color: var(--cyan);
