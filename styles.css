@@ -55,10 +55,9 @@ nav a { text-decoration: none; }
     max-width: 1120px;
     margin: 0 auto;
     padding: 66px 24px 86px;
-    display: grid;
-    grid-template-columns: minmax(0, 1fr) 340px;
-    align-items: center;
-    gap: 64px;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
 }
 
 .eyebrow {
@@ -112,106 +111,19 @@ h1 {
     border: 1px solid var(--line);
 }
 
-.phone {
-    width: 320px;
-    min-height: 610px;
-    padding: 18px;
-    border: 1px solid rgba(255, 255, 255, 0.13);
-    border-radius: 34px;
-    background: #070914;
-    box-shadow: 0 30px 80px rgba(0, 0, 0, 0.45);
-}
-
-.top {
-    min-height: 110px;
-    padding: 18px;
-    border-radius: 22px;
-    background: linear-gradient(145deg, #145d7c, #042e42);
-}
-
-.top strong,
-.top span {
-    display: block;
-}
-
-.top span,
-.stats span,
-.card span {
-    color: var(--muted);
-    font-size: 12px;
-}
-
-.stats {
-    margin: 16px 0;
+.app-banners {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 14px;
 }
 
-.stats div,
-.card {
+.app-banners img {
+    display: block;
+    width: 100%;
+    height: auto;
     border: 1px solid var(--line);
-    border-radius: 14px;
-    background: rgba(255, 255, 255, 0.07);
-}
-
-.stats div { padding: 12px; }
-
-.stats strong {
-    color: var(--cyan);
-    font-size: 22px;
-}
-
-.days {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 8px;
-    margin-bottom: 14px;
-}
-
-.days span {
-    padding: 10px 0;
     border-radius: 18px;
-    background: rgba(255, 255, 255, 0.12);
-    color: var(--muted);
-    font-size: 12px;
-    text-align: center;
-}
-
-.days .active {
-    background: #3f8ba1;
-    color: white;
-}
-
-.card {
-    margin-top: 10px;
-    padding: 12px;
-}
-
-.card strong,
-.card span {
-    display: block;
-}
-
-.card i {
-    display: block;
-    height: 56px;
-    margin-top: 10px;
-    border-radius: 8px;
-    opacity: 0.9;
-    background-size: 12px 12px;
-}
-
-.card.cyan i {
-    background-image: radial-gradient(circle, var(--cyan) 3px, rgba(255, 255, 255, 0.1) 3px);
-}
-
-.card.red i {
-    background-image: radial-gradient(circle, var(--red) 3px, rgba(255, 255, 255, 0.1) 3px);
-}
-
-.card.yellow i {
-    background-image: radial-gradient(circle, var(--yellow) 3px, rgba(255, 255, 255, 0.1) 3px);
+    box-shadow: 0 30px 80px rgba(0, 0, 0, 0.45);
 }
 
 .features {
@@ -285,7 +197,6 @@ footer p {
 
 @media (max-width: 820px) {
     .hero-content {
-        grid-template-columns: 1fr;
         padding-top: 44px;
     }
 
@@ -299,7 +210,11 @@ footer p {
         flex-direction: column;
     }
 
-    .phone {
-        width: min(100%, 320px);
+    .app-banners {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .app-banners img {
+        border-radius: 12px;
     }
 }
