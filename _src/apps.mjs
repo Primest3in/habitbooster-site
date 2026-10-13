@@ -180,7 +180,13 @@ export default [
         'radial-gradient(circle at 85% 0%, rgba(185, 120, 74, 0.20), transparent 32rem), linear-gradient(180deg, #EEE0CA 0%, #F3EADC 100%)',
     },
 
-    screenshots: [], // add e.g. { file: 'screenshot-1.jpg', alt: 'Bookify reading view in Sepia theme.' }
+    screenshots: [
+      { file: 'screenshot-1.jpg', alt: 'Feels like a real book: Bookify’s realistic page-curl turn.' },
+      { file: 'screenshot-2.jpg', alt: 'Your PDFs, made readable: Bookify converting a PDF into a book.' },
+      { file: 'screenshot-3.jpg', alt: 'A page for every light: Bookify’s six reading themes with font size and brightness controls.' },
+      { file: 'screenshot-4.jpg', alt: 'Type made for reading: choosing Literata, Merriweather, Source Serif 4 or Cormorant Garamond.' },
+      { file: 'screenshot-5.jpg', alt: 'Easy on your eyes: reading in Bookify’s calm Sage theme.' },
+    ],
 
     features: [
       { title: 'Book-style reading', text: 'PDFs become flowing, book-style text that fits your screen.' },
